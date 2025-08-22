@@ -13,7 +13,7 @@ class MyAccountManager(BaseUserManager):
             raise ValueError('User must have an username')
 
         user = self.model(
-            email = self.normalize_email(email),
+            email = self.normalize_email(email), #lower case of email
             username = username,
             first_name = first_name,
             last_name = last_name,
@@ -39,7 +39,6 @@ class MyAccountManager(BaseUserManager):
         return user
 
 
-
 class Account(AbstractBaseUser):
     first_name      = models.CharField(max_length=50)
     last_name       = models.CharField(max_length=50)
@@ -52,8 +51,8 @@ class Account(AbstractBaseUser):
     last_login      = models.DateTimeField(auto_now_add=True)
     is_admin        = models.BooleanField(default=False)
     is_staff        = models.BooleanField(default=False)
-    is_active        = models.BooleanField(default=False)
-    is_superadmin        = models.BooleanField(default=False)
+    is_active       = models.BooleanField(default=False)
+    is_superadmin   = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username', 'first_name', 'last_name']

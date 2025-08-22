@@ -7,6 +7,8 @@ class Category(models.Model):
     description = models.TextField(max_length=255, blank=True)
     cat_image = models.ImageField(upload_to='photos/categories', blank=True)
 
+
+    # for nomenclature of categorys --> categories
     class Meta:
         verbose_name = 'category'
         verbose_name_plural = 'categories'

@@ -1,3 +1,52 @@
+<style>
+        /* Basic styling for the page */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for the content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        /* Styling for the code block */
+        pre {
+            background-color: #2d2d2d; /* Dark background */
+            color: #f8f8f2;             /* Light text */
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;           /* Add scrollbar if content is too wide */
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        code {
+            font-family: "Fira Code", "Courier New", monospace;
+        }
+        
+        /* Style for comments within the code block */
+        .comment {
+            color: #75715e; /* Grey color for comments */
+            font-style: italic;
+        }
+    </style>
+
 <div align="center">
 
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain-wordmark.svg" alt="ShopMaster Logo" width="200"/>
@@ -138,6 +187,73 @@ Follow these steps to get the project up and running on your local machine.
 
 ---
 
+<div class="container">
+        <h1>🛍️ ShopMaster: Django Project Structure</h1>
+        <p>A scalable and well-organized file structure for the ShopMaster e-commerce application.</p>
+
+        <pre><code>shopmaster/
+│
+├── .env                  <span class="comment"># Environment variables (SECRET_KEY, DEBUG, etc.)</span>
+├── .gitignore            <span class="comment"># Files and folders to be ignored by Git</span>
+├── manage.py             <span class="comment"># Django's command-line utility for administrative tasks</span>
+├── README.md             <span class="comment"># Project documentation</span>
+└── requirements.txt      <span class="comment"># Project dependencies</span>
+│
+├── <strong style="color: #a6e22e;">shopmaster/</strong>             <span class="comment"># Main project configuration directory</span>
+│   ├── __init__.py
+│   ├── settings.py       <span class="comment"># Project settings</span>
+│   ├── urls.py           <span class="comment"># Project-level URL routing</span>
+│   ├── wsgi.py           <span class="comment"># Entry-point for WSGI-compatible web servers</span>
+│   └── asgi.py           <span class="comment"># Entry-point for ASGI-compatible web servers</span>
+│
+├── <strong style="color: #a6e22e;">accounts/</strong>               <span class="comment"># App for user authentication, profiles, and management</span>
+│   ├── migrations/
+│   ├── templates/accounts/ <span class="comment"># App-specific templates (e.g., login.html, profile.html)</span>
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── <strong style="color: #a6e22e;">products/</strong>               <span class="comment"># App for product catalog, categories, search, and reviews</span>
+│   ├── migrations/
+│   ├── templates/products/ <span class="comment"># App-specific templates (e.g., product_list.html)</span>
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── <strong style="color: #a6e22e;">cart/</strong>                   <span class="comment"># App for shopping cart functionality</span>
+│   ├── migrations/
+│   ├── ... (and other standard app files)
+│
+├── <strong style="color: #a6e22e;">orders/</strong>                 <span class="comment"># App for checkout, order history, and payment processing</span>
+│   ├── migrations/
+│   ├── ... (and other standard app files)
+│
+├── <strong style="color: #a6e22e;">chatbot/</strong>                <span class="comment"># App for the AI chatbot functionality</span>
+│   ├── migrations/
+│   ├── services.py       <span class="comment"># Logic for interacting with the AI model</span>
+│   ├── ... (and other standard app files)
+│
+├── <strong style="color: #66d9ef;">static/</strong>                 <span class="comment"># Project-wide static files (CSS, JS, Images)</span>
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── <strong style="color: #66d9ef;">templates/</strong>              <span class="comment"># Project-wide templates (base layout, navbar, etc.)</span>
+│   ├── base.html
+│   └── includes/
+│
+└── <strong style="color: #fd971f;">media/</strong>                  <span class="comment"># For user-uploaded files (e.g., product images)</span>
+    └── products/
+</code></pre>
+    </div>
 
 <details>
 <summary>📂 View Project Structure</summary>

@@ -138,5 +138,47 @@ Follow these steps to get the project up and running on your local machine.
 
 ---
 
+
 <details>
 <summary>📂 View Project Structure</summary>
+
+shopmaster/
+├── shopmaster/       # Main project settings
+├── accounts/         # User authentication (login, register, profile)
+├── products/         # Product catalog, reviews, search
+├── cart/             # Shopping cart & checkout
+├── orders/           # Order management
+├── chatbot/          # AI chatbot (LAMP)
+├── templates/        # HTML templates
+├── static/           # CSS, JS, images
+├── .env              # Environment variables (ignored by git)
+├── manage.py
+└── requirements.txt
+
+</details>
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  **Fork the Project**
+2.  **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3.  **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
+4.  **Push to the Branch** (`git push origin feature/AmazingFeature`)
+5.  **Open a Pull Request**
+
+---
+
+## 📜 License
+
+This project is distributed under the MIT License. See `LICENSE` file for more information.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by [Your Name]</p>
+  <a href="https://github.com/your-username">GitHub</a> •
+  <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a>
+</div>

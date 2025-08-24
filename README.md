@@ -192,7 +192,7 @@ shopmaster/
 │
 └── media/                  # For user-uploaded files (e.g., product images)
     └── products/
-
+```
 <details>
 <summary>📂 View Project Structure</summary>
 

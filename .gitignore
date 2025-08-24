@@ -1,0 +1,67 @@
+# ===================================================================
+#  SECRET & ENVIRONMENT-SPECIFIC FILES - MOST IMPORTANT!
+# ===================================================================
+# This file contains your secret keys, database passwords, API keys, etc.
+# Never, ever commit this file.
+env
+
+
+# ===================================================================
+#  DJANGO & PROJECT-SPECIFIC
+# ===================================================================
+# The local SQLite database file. Each developer should have their own.
+db.sqlite3
+
+# Directory for user-uploaded files. Should not be in version control.
+/media/
+
+# Directory where `collectstatic` places all static files for deployment.
+# This is generated from your source static files, so it doesn't need to be tracked.
+/staticfiles/
+
+
+# ===================================================================
+#  PYTHON ARTIFACTS
+# ===================================================================
+# Python bytecode and cache folders. These are auto-generated.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders.
+# These are specific to your machine and can be recreated from requirements.txt.
+venv/
+env/
+.venv/
+*/.venv/
+
+# Python packaging and installation artifacts.
+*.egg-info/
+build/
+dist/
+*.egg
+
+
+# ===================================================================
+#  IDE / EDITOR CONFIGURATION
+# ===================================================================
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# ===================================================================
+#  OPERATING SYSTEM FILES
+# ===================================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

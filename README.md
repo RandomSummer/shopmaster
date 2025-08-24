@@ -193,22 +193,6 @@ shopmaster/
 └── media/                  # For user-uploaded files (e.g., product images)
     └── products/
 ```
-<details>
-<summary>📂 View Project Structure</summary>
-
-shopmaster/
-├── shopmaster/       # Main project settings
-├── accounts/         # User authentication (login, register, profile)
-├── products/         # Product catalog, reviews, search
-├── cart/             # Shopping cart & checkout
-├── orders/           # Order management
-├── chatbot/          # AI chatbot (LAMP)
-├── templates/        # HTML templates
-├── static/           # CSS, JS, images
-├── .env              # Environment variables (ignored by git)
-├── manage.py
-└── requirements.txt
-
 </details>
 
 ---
@@ -232,7 +216,7 @@ This project is distributed under the MIT License. See `LICENSE` file for more i
 ---
 
 <div align="center">
-  <p>Made with ❤️ by [Your Name]</p>
+  <p>Made with ❤️ by [Sk Sofiquee Fiaz]</p>
   <a href="https://github.com/your-username">GitHub</a> •
   <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a>
 </div>

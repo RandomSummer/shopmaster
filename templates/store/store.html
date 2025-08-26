@@ -124,157 +124,35 @@
 
 <header class="border-bottom mb-4 pb-3">
 		<div class="form-inline">
-			<span class="mr-md-auto">32 Items found </span>
+			<span class="mr-md-auto"><b>{{product_count}}</b> Items found </span>
 			
 		</div>
 </header><!-- sect-heading -->
 
 <div class="row">
+    {% for product in products %}
 	<div class="col-md-4">
 		<figure class="card card-product-grid">
 			<div class="img-wrap"> 
 				
-				<img src="images/items/1.jpg">
+				<img src="{{ product.images.url }}" alt="Product Image">
 				
 			</div> <!-- img-wrap.// -->
 			<figcaption class="info-wrap">
 				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Great item name goes here</a>
+					<a href="./product-detail.html" class="title">{{ product.product_name }}</a>
 					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-						<del class="price-old">$1980</del>
+						<span class="price"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+  <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+</svg>{{ product.price }}</span>
+						{% comment %} <del class="price-old">$1980</del> {% endcomment %}
 					</div> <!-- price-wrap.// -->
 				</div>
-				<a href="#" class="btn btn-block btn-success">Added to cart </a>
+				<a href="#" class="btn btn-block btn-primary">Add to cart </a>
 			</figcaption>
 		</figure>
 	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/2.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/3.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/4.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/5.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/6.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/7.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
-
-	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap"> 
-				<img src="images/items/1.jpg">
-				
-			</div> <!-- img-wrap.// -->
-			<figcaption class="info-wrap">
-				<div class="fix-height">
-					<a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
-					<div class="price-wrap mt-2">
-						<span class="price">$1280</span>
-					</div> <!-- price-wrap.// -->
-				</div>
-				<a href="#" class="btn btn-block btn-primary">Add to cart </a>	
-			</figcaption>
-		</figure>
-	</div> <!-- col.// -->
+    {% endfor %}
 </div> <!-- row end.// -->
 
 

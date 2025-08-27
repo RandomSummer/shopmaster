@@ -216,7 +216,7 @@ This project is distributed under the MIT License. See `LICENSE` file for more i
 ---
 
 <div align="center">
-  <p>Made with ❤️ by [Sk Sofiquee Fiaz]</p>
+  <p>Made with ❤️ by RandomSummer</p>
   <a href="https://github.com/your-username">GitHub</a> •
   <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a>
 </div>

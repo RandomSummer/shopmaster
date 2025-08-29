@@ -43,7 +43,7 @@
 
 | Homepage                               | Product Details                      | Admin Dashboard                          |
 | -------------------------------------- | ------------------------------------ | ---------------------------------------- |
-| ![Homepage](source/homepage.png) | ![Product](source/homepage.png) | ![Admin](source/homepage.png) |
+| ![Homepage](source/homepage.png) | ![Product](source/products store.png) | ![Admin](source/homepage.png) |
 
 ---
 

@@ -43,7 +43,7 @@
 
 | Homepage                               | Product Details                      | Admin Dashboard                          |
 | -------------------------------------- | ------------------------------------ | ---------------------------------------- |
-| ![Homepage]((https://github.com/RandomSummer/shopmaster/blob/master/source/homepage.png)) | ![Product]((https://github.com/RandomSummer/shopmaster/blob/master/source/products%20store.png)) | ![Admin]((https://github.com/RandomSummer/shopmaster/blob/master/source/homepage.png)) |
+| ![Homepage](source/homepage.png) | ![Product](source/homepage.png) | ![Admin](source/homepage.png) |
 
 ---
 

@@ -22,8 +22,8 @@ class CartItem(models.Model):
     # class Meta:
     #     db_table = 'CartItem'
 
-    # def sub_total(self):
-    #     return self.product.price * self.quantity   
+    def sub_total(self):
+        return self.product.price * self.quantity   
     
     def __str__(self):
         return self.product
